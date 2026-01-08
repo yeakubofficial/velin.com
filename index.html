@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velin Fashion</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1520962915861-b04aa3d0f6b3?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+            background-size: cover;
+            height: 90vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        .product-card img {
+            height: 300px;
+            object-fit: cover;
+        }
+        footer {
+            background: #333;
+            color: whitesmoke;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+    <img src="logo.png" alt="Velin Fashion" height="100" class="d-inline-block align-text-top">
+    Velin Fashion
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Velin Fashion</h1>
+            <p class="lead">Modern Style Meets Traditional Elegance</p>
+            <a href="#products" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-5" id="products">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Collection</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="image2.jpeg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Elegant Dress</h5>
+                            <p class="card-text">Premium quality T-Shirt with modern design.</p>
+                            <a href="#" class="btn btn-outline-primary w-100">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="image.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Stylish Top</h5>
+                            <p class="card-text">Comfortable and chic for everyday wear.</p>
+                            <a href="#" class="btn btn-outline-primary w-100">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Outfit</h5>
+                            <p class="card-text">Traditional design with a modern twist.</p>
+                            <a href="#" class="btn btn-outline-primary w-100">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5 bg-light" id="about">
+        <div class="container">
+            <h2 class="text-center mb-4">About Velin Fashion</h2>
+            <p class="text-center">Velin Fashion brings the perfect blend of contemporary style and traditional elegance. We use high-quality fabrics to craft outfits that make you feel confident and stylish every day.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2026 Velin Fashion. All rights reserved.</p>
+            <p>
+                <a href="https://www.facebook.com/staywithVELIN" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/staywithvelin/?hl=en" target="_blank">Instagram</a>
+            </p>
+            <p>
+                Call/WhatsApp: <a href="tel:+8801570207099">01570207099</a> 
+                bKash: <a href="tel:+8801570207099">01570207099</a> | Email: <a href="mailto:velinshop@gmail.com">velinshop@gmail.com</a> 
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
